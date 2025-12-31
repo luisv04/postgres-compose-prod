@@ -96,10 +96,18 @@ psql -h 127.0.0.1 -p $POSTGRES_PORT -U $POSTGRES_USER -d $POSTGRES_DB
 - **Contraseña:** Valor de `POSTGRES_PASSWORD` en `.env`
 - **Base de datos:** Valor de `POSTGRES_DB` en `.env`
 
-### Ejemplo de cadena de conexión
+### URL de conexión
+
+**Formato estándar PostgreSQL:**
 
 ```
 postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@127.0.0.1:${POSTGRES_PORT:-5432}/${POSTGRES_DB}
+```
+
+**Ejemplo con valores por defecto:**
+
+```
+postgresql://postgres:tu_password_seguro@127.0.0.1:5432/myapp_db
 ```
 
 ## Verificación
