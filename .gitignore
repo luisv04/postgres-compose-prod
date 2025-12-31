@@ -1,0 +1,10 @@
+# Environment variables with credentials
+.env
+
+# PostgreSQL data directory (persistent volumes)
+data/
+data/postgres/
+
+# Optional: init scripts directory (if you add custom initialization)
+# Uncomment if you want to ignore init scripts
+# init/
